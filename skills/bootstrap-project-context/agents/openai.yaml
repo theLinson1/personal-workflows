@@ -1,0 +1,4 @@
+interface:
+  display_name: "接入项目背景"
+  short_description: "按当前任务采集有来源的项目事实，保留未知并随变化更新"
+  default_prompt: "使用 $bootstrap-project-context 建立当前项目的最小 context，不预设架构。"

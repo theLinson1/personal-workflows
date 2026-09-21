@@ -1,0 +1,23 @@
+{
+  "name": "personal-workflows",
+  "version": "0.1.0",
+  "description": "Portable personal methods for framing, decisions, evidence, retrospectives, and project context.",
+  "author": {
+    "name": "theLinson1",
+    "url": "https://github.com/theLinson1"
+  },
+  "repository": "https://github.com/theLinson1/personal-workflows",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Personal Workflows",
+    "shortDescription": "Carry personal methods across projects and computers.",
+    "longDescription": "Frame problems, compare options, verify outcomes, capture useful methods, and load project context when it becomes available.",
+    "developerName": "theLinson1",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $capture-workflow to extract a reusable method from this task.",
+      "Use $bootstrap-project-context to collect only the project facts we need now."
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "验证交付"
+  short_description: "以实际证据核验完成声明，区分已验证、未知和必要补救动作"
+  default_prompt: "使用 $verify-delivery 检查当前产物，报告实际验证结果和仍存在的缺口。"

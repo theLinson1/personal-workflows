@@ -1,0 +1,4 @@
+interface:
+  display_name: "定义问题"
+  short_description: "把模糊任务转为明确目标、约束、完成证据和可行动的下一步"
+  default_prompt: "使用 $frame-problem 整理当前任务，找出最值得先澄清或验证的事项。"

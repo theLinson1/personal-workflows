@@ -1,0 +1,16 @@
+# Local machine state and Python caches
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+
+# Do not track runtime/project context in the personal methods repository
+local-context/
+private/
+*.log
+.env
+.env.*
+!.env.example
+dist/
+*.zip

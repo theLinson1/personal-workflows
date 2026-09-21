@@ -1,0 +1,4 @@
+interface:
+  display_name: "沉淀方法"
+  short_description: "从任务和纠偏中提炼可复用方法，区分个人偏好与项目事实"
+  default_prompt: "使用 $capture-workflow 从本次任务提炼值得保留的方法并标明来源。"
