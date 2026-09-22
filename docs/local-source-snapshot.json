@@ -1,0 +1,138 @@
+{
+  "date": "2026-09-22",
+  "baseline_commit": "ba858dbee988c96c6bbbc41746fa740ca1590301",
+  "aliases": {
+    "personal": "~/.codex/skills",
+    "manual": "~/.agents/skills",
+    "lean": "~/.codex/superpowers-lean/skills"
+  },
+  "note": "Source fingerprints, not runtime dependencies or proof of user endorsement. Plugin/system skills are environment dependencies, not vendored.",
+  "skill_count": 15,
+  "skills": [
+    {
+      "source": "personal/aihot/SKILL.md",
+      "sha256": "50859a57f643f855a184a492330528ae196987dcd37ee5171757c0032880c77a",
+      "bytes": 21979
+    },
+    {
+      "source": "personal/follow-builders/SKILL.md",
+      "sha256": "c0e801510917befd8efe89b190993472673bad1b79c5c81b95203f0a58c185fa",
+      "bytes": 18629
+    },
+    {
+      "source": "personal/gpt-image-2-style-library/SKILL.md",
+      "sha256": "98519a3bfd28c5ab5630771a536f18fbe3627123cd7dd7a8801fa5da166a60f9",
+      "bytes": 2433
+    },
+    {
+      "source": "personal/grill-me/SKILL.md",
+      "sha256": "74147eb6010a65957efef2b9e0f0b3ff935c1def7fc117697151b1d0f3610556",
+      "bytes": 635
+    },
+    {
+      "source": "personal/hatch-pet/SKILL.md",
+      "sha256": "ccfabd5d761faa721586f8793dd93bdd735e2a2c07099a5d593a7e31286e58f3",
+      "bytes": 85522
+    },
+    {
+      "source": "personal/khazix-writer/SKILL.md",
+      "sha256": "081bfbf5bc0f0c9a2c5a6410eaaa9de18a0cc50f932a1195f45df04e30018602",
+      "bytes": 30173
+    },
+    {
+      "source": "personal/layered-learning-design/SKILL.md",
+      "sha256": "b9327b904a389b40687e4eafa4c1b202e86eea7aae969179c5c4658c2070d70b",
+      "bytes": 13273
+    },
+    {
+      "source": "personal/project-memory/SKILL.md",
+      "sha256": "7641e8a81847f429aa307c911826c26cb28bd031dc74b5f47aba9805c5948352",
+      "bytes": 11592
+    },
+    {
+      "source": "personal/qu-ai-wei/SKILL.md",
+      "sha256": "79dfbf85e58435d87bce8c8b2055e2a0cb10a52b4bda46d7389217ffd00c8fa3",
+      "bytes": 77331
+    },
+    {
+      "source": "personal/requirements-closure/SKILL.md",
+      "sha256": "e1ac4f849edd8046ca5cab6d8dd4ae393b95553451da0ec351a27ad76ec87b19",
+      "bytes": 12902
+    },
+    {
+      "source": "manual/officecli/SKILL.md",
+      "sha256": "ea95d07ddb93c315f43235e560e6aa8cd46c347758da5a270fe45a12fa5f99bb",
+      "bytes": 20517
+    },
+    {
+      "source": "lean/brainstorming/SKILL.md",
+      "sha256": "3088428fef15bfa377508e008dc65af4df73cda6804e423d432061a25123fdf2",
+      "bytes": 1658
+    },
+    {
+      "source": "lean/systematic-debugging/SKILL.md",
+      "sha256": "275a10816e7d5f4344910140aa76049daca1df1a036167450cbd81841b95c14e",
+      "bytes": 1633
+    },
+    {
+      "source": "lean/using-git-worktrees/SKILL.md",
+      "sha256": "589adc5cccb7ce63fe73e1ecb275612788500926f96d053cfd9b5f2eb4269802",
+      "bytes": 1351
+    },
+    {
+      "source": "lean/verification-before-completion/SKILL.md",
+      "sha256": "5c70c1a91000ffbdcff3a7a916cdb77b58f5f3a76225307cb75d7f98e592224e",
+      "bytes": 1006
+    }
+  ],
+  "learning_resources": [
+    {
+      "source": "personal/layered-learning-design/SKILL.md",
+      "sha256": "b9327b904a389b40687e4eafa4c1b202e86eea7aae969179c5c4658c2070d70b"
+    },
+    {
+      "source": "personal/layered-learning-design/agents/openai.yaml",
+      "sha256": "3c81f13f963b5a0835419bf584b76bf766e7f17ecadb5a83e3c4babf79eab601"
+    },
+    {
+      "source": "personal/layered-learning-design/assets/course-template.md",
+      "sha256": "978110f2f297f96c462fdd78c1eb1da61f42e2cdff9ed12c581ddfaaaa130310"
+    },
+    {
+      "source": "personal/layered-learning-design/assets/learning-contract-template.md",
+      "sha256": "b52bcfaa70e1cf02b20af97991ddde33b07fa83f5d67480e3bce651f97d9da65"
+    },
+    {
+      "source": "personal/layered-learning-design/assets/lesson-template.md",
+      "sha256": "fead53a3896e5781cc628fb25f2b8b8a7c0749faae3227c7068b23de21daa933"
+    },
+    {
+      "source": "personal/layered-learning-design/references/audit-rubric.md",
+      "sha256": "501ff24204068409210e23a76c34b4bdc87cb01a697fad6e5212162227567cee"
+    },
+    {
+      "source": "personal/layered-learning-design/references/course-design.md",
+      "sha256": "40ddc9f4ebc3685d4089020fc460ebd7f2d42cb5ce8be540af9ba89a6ed37a03"
+    },
+    {
+      "source": "personal/layered-learning-design/references/domain-adapters.md",
+      "sha256": "b594c3e83ee3c1d62769c9ac3852f5dc434077c9c298c5b4fd35192a48d91a14"
+    },
+    {
+      "source": "personal/layered-learning-design/references/engineering-incremental-course-example.md",
+      "sha256": "e91d3a6544cf892d73c229a6ee98001adbf633d8789b37824e26a095bb5f80bf"
+    },
+    {
+      "source": "personal/layered-learning-design/references/engineering-production-bridge.md",
+      "sha256": "a2dc2f492c4e0ff7bf1e8e4e1c7e124b49c9a0c3e5403a26f2a515671ecc0a60"
+    },
+    {
+      "source": "personal/layered-learning-design/references/interactive-facilitation.md",
+      "sha256": "51fb756ed7f54821763a3df580335812a1961a122c5608e9ca02f094a1c69d00"
+    },
+    {
+      "source": "personal/layered-learning-design/references/rag-lesson-08-query-transformation-example.md",
+      "sha256": "870b4c3d2ef50318f6f846659705f1168830c6f679aa65534150e61694af852f"
+    }
+  ]
+}

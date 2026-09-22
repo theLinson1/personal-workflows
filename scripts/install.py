@@ -11,6 +11,14 @@ import sys
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 SKILLS_ROOT = PACKAGE_ROOT / "skills"
+CORE_SKILLS = (
+    "bootstrap-project-context",
+    "capture-workflow",
+    "compare-options",
+    "debug-with-evidence",
+    "frame-problem",
+    "verify-delivery",
+)
 
 
 def is_link(path):
@@ -52,14 +60,21 @@ def available_skills():
     return result
 
 
-def plan_install(destination, names, mode):
+def plan_install(destination, names, mode, profile=None):
     available = available_skills()
-    selected = sorted(set(names)) if names else sorted(available)
+    if names and profile is not None:
+        raise ValueError("Choose --only or --profile, not both")
+    if profile not in (None, "core", "all"):
+        raise ValueError(f"Unknown profile: {profile}")
+    selected = sorted(set(names)) if names else sorted(
+        available if profile == "all" else CORE_SKILLS
+    )
     unknown = set(selected) - set(available)
     if unknown:
         raise ValueError("Unknown skills: " + ", ".join(sorted(unknown)))
     destination = destination.expanduser().resolve()
-    if destination == SKILLS_ROOT or SKILLS_ROOT in destination.parents:
+    source_root = SKILLS_ROOT.resolve()
+    if destination == source_root or source_root in destination.parents:
         raise ValueError("Destination must be outside the source skills directory")
     plan = []
     for name in selected:
@@ -86,12 +101,17 @@ def plan_install(destination, names, mode):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dest", type=Path, default=Path.home() / ".agents" / "skills")
-    parser.add_argument("--only", nargs="+", metavar="SKILL")
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--only", nargs="+", metavar="SKILL")
+    selection.add_argument(
+        "--profile", choices=("core", "all"),
+        help="core: six engineering skills (default); all: every packaged skill",
+    )
     parser.add_argument("--mode", choices=("copy", "link"), default="copy")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     try:
-        plan = plan_install(args.dest, args.only, args.mode)
+        plan = plan_install(args.dest, args.only, args.mode, args.profile)
         for action, source, target in plan:
             print(f"{action}: {target}")
             if args.dry_run or action == "SKIP":

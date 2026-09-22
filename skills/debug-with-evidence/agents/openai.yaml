@@ -1,0 +1,4 @@
+interface:
+  display_name: "用证据排障"
+  short_description: "从可证伪假设定位故障，以最小诊断区分原因并核验实际修复"
+  default_prompt: "使用 $debug-with-evidence 定位当前故障，先验证原因，再完成已授权的修复。"

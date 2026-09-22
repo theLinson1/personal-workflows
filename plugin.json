@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "personal-workflows",
-  "version": "0.1.0",
-  "description": "Portable personal methods for framing, decisions, evidence, retrospectives, and project context.",
+  "version": "0.2.0",
+  "description": "Portable methods for project context, decisions, debugging, evidence, retrospectives, and learning design.",
   "author": {
     "name": "theLinson1",
     "url": "https://github.com/theLinson1"

@@ -1,7 +1,7 @@
 {
   "name": "personal-workflows",
-  "version": "0.1.0",
-  "description": "Portable personal methods for framing, decisions, evidence, retrospectives, and project context.",
+  "version": "0.2.0",
+  "description": "Portable methods for project context, decisions, debugging, evidence, retrospectives, and learning design.",
   "author": {
     "name": "theLinson1",
     "url": "https://github.com/theLinson1"
@@ -11,7 +11,7 @@
   "interface": {
     "displayName": "Personal Workflows",
     "shortDescription": "Carry personal methods across projects and computers.",
-    "longDescription": "Frame problems, compare options, verify outcomes, capture useful methods, and load project context when it becomes available.",
+    "longDescription": "Six engineering methods plus optional learning design, reconciled with local skills and packaged for reuse across computers.",
     "developerName": "theLinson1",
     "category": "Productivity",
     "capabilities": [],
