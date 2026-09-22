@@ -1,0 +1,4 @@
+interface:
+  display_name: "Layered Learning Design"
+  short_description: "Design progressive learning paths and interactive contracts"
+  default_prompt: "Use $layered-learning-design to design a progressive lesson, course, or interactive Learning Contract with observable evidence, staged feedback, and transfer."

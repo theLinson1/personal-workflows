@@ -7,6 +7,8 @@ import re
 import sys
 from urllib.parse import unquote
 
+from install import CORE_SKILLS
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -27,6 +29,12 @@ def validate(root=ROOT):
     skills = sorted((root / "skills").glob("*/SKILL.md"))
     if not skills:
         errors.append("No skills found")
+    packaged_names = {path.parent.name for path in skills}
+    for name in CORE_SKILLS:
+        if name not in packaged_names:
+            errors.append(f"Core profile names a missing skill: {name}")
+    if len(CORE_SKILLS) != len(set(CORE_SKILLS)):
+        errors.append("Core profile contains duplicate names")
     for path in skills:
         text = path.read_text(encoding="utf-8")
         match = re.match(r"\A---\n(.*?)\n---\n", text, re.DOTALL)
